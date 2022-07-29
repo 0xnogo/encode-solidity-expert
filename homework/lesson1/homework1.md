@@ -10,7 +10,7 @@ An Ethereum account holds the account state which is composed by:
 
 ## 2. Where is the full Ethereum state held?
 
-The full Ethereum state is in the World state which consists of a mapping between account addresses and account states. The mapping is stored in a data structure known as a Merkle Patricia tree.
+Some nodes will hold the state. But a lot of the time the information is produced by recreating state rather storing it. Nodes can also communicate state to each others
 
 ## 3. What is a replay attack? Which 2 pieces of information can prevent it?
 
