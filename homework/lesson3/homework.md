@@ -21,19 +21,14 @@ Some good resources:
 ```
 2.
 ```
-
-* Scenario 1: the implementation provide the same result but with a different time/space complexity. Each operation in precompiled contract is associated to an OPCODE with a predefined gas cost. If the complexity of the execution of OPCODEs varies, then miners will have different mining cost for the same tx. Also if it takes longer to execute one operation, then some miners will have a disadvantages when competing for the next block mining.
-* Scenario 2: the implementation provide different result. This will provoke massive inconsistencies in the blockchain. Some contracts won't be able to execute properly the code or we can have even issue when node will try to verify mined blocked.
+Node running that client will then come out with different values when running tx to the one running on miners. Consensus break at that point that would result in a fork. Depending on how long this is taking to get fixed, but eventually they would all agree after the fix
 
 ```
 3.
 ```
 The beneficiary is the address that will collect the fee from a successful mining.
 
-I am guessing that a miner is putting it's own address in the beneficiary field and then mining the block.
-
-If the beneficiary is not validated, then a malicious actor could just take the same block and change the beneficiary field and try to get the block accepeted before the original one.
-
+Currently any one is allowed to produce blocks and miner are incentivized so their is no need.
 ```
 4.
 ```

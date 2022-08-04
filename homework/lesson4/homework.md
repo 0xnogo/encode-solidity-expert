@@ -17,8 +17,9 @@ To check if `tx.origin == msg.sender` we are in fact checking that the call to o
 2.
 ```
 
-Event spoofing? Spoofing in general means to pretend to be someone to win a person's trust. By Event spoofing, I undersand that one contract is emitting events that look similar to the right one so that people/website react to them.
-The Spoofer can then fake a subscriptions to be part of a community for example.
+Event spoofing? Spoofing in general means to pretend to be someone to win a person's trust. 
+
+Around project like the Graph (takes events and put them in DB and query...). But it is relying upon data received. We could imagine the situation that a malicious person create a token and use that contract that would send out more event or change details in the events arguments. Like Vitalik address has bought some of that token and be fooled by that (and buy it)
 
 ```
 3.
