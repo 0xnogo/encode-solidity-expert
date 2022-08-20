@@ -41,6 +41,8 @@ contract Example1{
 
 In this contract, we are using the `block.timestamp` as random factor. This is easily attackable as anyone could implement the same function and use it to get the same random number. For example, if this is used for a lottery, it will be possible to get exactly the right number and win the prize.
 
+Also if rand1 is big enough, we might get rand2 = 0.
+
 Solution: use an oracle
 
 ```
